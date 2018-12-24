@@ -11,16 +11,7 @@ registerModel = false;
 values: any;
   constructor(private http: HttpClient) { }
 
-  getValues() {
-    this.http.get('http://localhost:5000/api/values').subscribe(Response => {
-      this.values = Response;
-    }, error => {
-      console.log(error);
-    });
-}
-  ngOnInit() {
-    this.getValues();
-  }
+   ngOnInit() { }
 registerToggle() {
   this.registerModel = true;
 }
